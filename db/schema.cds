@@ -1,10 +1,15 @@
 namespace customer.data.model;
 
-entity Customers{
+using {managed} from '@sap/cds/common';
+using {cuid} from '@sap/cds/common';
+
+// define a custom data type using standard data type
+type commonDataType : String(20);
+entity Customers {
     key customerId : UUID;
-    firstname : String(20);
-    lastname : String(20);
-    email : String(20);
+    firstname : commonDataType;
+    lastname : commonDataType;
+    email : commonDataType;
     address : String(30);
     phoneno : Integer;
 }
