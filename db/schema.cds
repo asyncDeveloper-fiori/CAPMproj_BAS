@@ -21,8 +21,9 @@ entity Customers : customAspect.customCustomer{
         pending=2;
         cancelled=3;
     }
-    order : Association to many Orders on order.customer = $self;
+    order : Composition of many Orders on order.customer = $self;
 }
+// after making componsition orders and products will only appear if there is customers
 
 entity Orders : cuid {
     orderDate : Date;
