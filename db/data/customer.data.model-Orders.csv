@@ -1,0 +1,5 @@
+ID,orderDate,status,orderType,customer_customerId,products_ID
+550e8400-e29b-41d4-a716-446655440000,04-03-2026,in-transit,retail,1001,501
+6fa459ea-ee8a-3ca4-894e-db77e160355e,01-03-2026,delivered,bulk,1002,502
+9b2c7f0e-3d4a-4b6a-8c1f-2a7d9e8f1234,02-03-2026,out for delivery,online,1003,503
+3f1e2d4c-5b6a-47c8-9d0e-1a2b3c4d5e6f,04-03-2026,in-transit,online,1004,504
