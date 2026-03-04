@@ -1,3 +1,3 @@
-customerId,firstname,lastname,email,address,phoneno
-8debbc92-7522-46d3-8f3a-ca5d52b2a9ae,sam,abc,sam@gmail.com,123,1234567890
-1e7713d5-4776-4d71-9d8d-8dd5c7240c7e,sam2,abc2,sam2@gamil.com,1234,0987654321
+customerId,firstname,lastname,email,address,phoneno,status
+8debbc92-7522-46d3-8f3a-ca5d52b2a9ae,sam,abc,sam@gmail.com,123,1234567890,1
+1e7713d5-4776-4d71-9d8d-8dd5c7240c7e,sam2,abc2,sam2@gamil.com,1234,0987654321,3

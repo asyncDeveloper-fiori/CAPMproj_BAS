@@ -15,4 +15,10 @@ entity Customers : customAspect.customCustomer{
     email : commonDataType;
     address : String(30);
     phoneno : Integer;
+    // using enums
+    status : Integer enum {
+        submitted=1;
+        pending=2;
+        cancelled=3;
+    }
 }
