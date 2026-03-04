@@ -21,4 +21,20 @@ entity Customers : customAspect.customCustomer{
         pending=2;
         cancelled=3;
     }
+    order : Association to many Orders on order.customer = $self;
+}
+
+entity Orders : cuid {
+    orderDate : Date;
+    status : String enum {placed; dispatched; arriving; cancelled;}
+    orderType : String(10);
+    customer : Association to Customers;
+    products : Association to Products;
+}
+
+entity Products : cuid {
+    name : String(20);
+    type : String(20);
+    category : String(20);
+    price : Decimal(10, 2);
 }
