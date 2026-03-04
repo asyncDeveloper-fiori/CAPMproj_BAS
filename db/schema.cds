@@ -38,3 +38,13 @@ entity Products : cuid {
     category : String(20);
     price : Decimal(10, 2);
 }
+
+// unmanaged association 
+entity Employees {
+    address : Association to Addresses on address.ID = address_ID;
+    address_ID : Integer;
+}
+
+entity Addresses{
+    key ID : Integer;
+}
