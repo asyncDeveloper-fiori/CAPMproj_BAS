@@ -13,7 +13,7 @@ entity Customers : customAspect.customCustomer{
     // firstname : commonDataType;
     // lastname : commonDataType;
     email : commonDataType default 'sam@gmail.com';
-    address : String(30) @title : 'Address';
+    address : String(30) @title : '{i18n>address}';
     phoneno : Integer;
     // using enums
     status : Integer enum {
