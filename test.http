@@ -1,0 +1,17 @@
+### Read Customers entity
+GET http://localhost:4004/odata/v4/customer/Customers
+
+
+### Create data in Customers entity
+POST http://localhost:4004/odata/v4/customer/Customers
+Content-Type: application/json
+
+{
+  "firstname": "sam2test_",
+  "lastname": "abc2",
+  "customerId": "1e7713d5-4776-4d71-9d8d-8dd5c7240c8e",
+  "email": "sam2@gamil.com",
+  "address": "1234",
+  "phoneno": 987654321,
+  "status": 3
+}
