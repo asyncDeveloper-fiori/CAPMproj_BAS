@@ -15,3 +15,11 @@ Content-Type: application/json
   "phoneno": 1234566789,
   "status": 2
 }
+
+### Update using patch
+PATCH http://localhost:4004/odata/v4/customer/Customers/9574028b-f50a-439a-91a4-d84e570ac6a1
+Content-Type: application/json
+
+{
+  "address" : "Bengaluru"
+}
