@@ -9,9 +9,9 @@ Content-Type: application/json
 {
   "firstname": "sam2test_",
   "lastname": "abc2",
-  "customerId": "1e7713d5-4776-4d71-9d8d-8dd5c7240c8e",
+  "customerId": "9574028b-f50a-439a-91a4-d84e570ac6a1",
   "email": "sam2@gamil.com",
   "address": "1234",
-  "phoneno": 987654321,
-  "status": 3
+  "phoneno": 1234566789,
+  "status": 2
 }
