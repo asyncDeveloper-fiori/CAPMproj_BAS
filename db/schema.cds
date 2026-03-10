@@ -8,8 +8,8 @@ type commonDataType : String(20);
 
 // calling and using custom asects
 using {customer.custom.aspect as customAspect} from './data/customAspect';
-entity Customers : customAspect.customCustomer{
-    key customerId : UUID;
+entity Customers : managed, customAspect.customCustomer,cuid{
+    // key customerId : UUID;
     // firstname : commonDataType;
     // lastname : commonDataType;
     email : commonDataType default 'sam@gmail.com';

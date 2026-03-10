@@ -13,7 +13,6 @@
       "previewLimit": 50,
       "driver": "SQLite",
       "name": "testdb",
-      "group": "customer orders db",
       "database": "${workspaceFolder:CAPMproj_BAS}/db.sqlite"
     }
   ]

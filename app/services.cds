@@ -4,15 +4,16 @@ using CustomerService as service from './customer_orders_app/annotations';
 annotate service.Customers with @(
     UI : {
         SelectionFields  : [
-            customerId,
+            ID,
             address,
             email,
-            phoneno
+            phoneno,
+            status
         ],
         LineItem : [
             {
                 $Type:'UI.DataField',
-                Value:customerId
+                Value:ID
             },
             {
                 $Type:'UI.DataField',
