@@ -54,13 +54,13 @@ annotate service.Orders with @(
     UI.LineItem #i18nOrderdeatils : [
         {
             $Type : 'UI.DataField',
-            Value : customer_ID,
-            Label : '{i18n>Customerid}',
+            Value : ID,
+            Label : '{i18n>Id}',
         },
         {
             $Type : 'UI.DataField',
-            Value : ID,
-            Label : '{i18n>Id}',
+            Value : customer_ID,
+            Label : '{i18n>Customerid}',
         },
         {
             $Type : 'UI.DataField',
@@ -100,5 +100,20 @@ annotate service.Orders with {
             Label : 'Products',
         },
         Common.ValueListWithFixedValues : true,
+        Common.Text : products.name,
+        Common.Text.@UI.TextArrangement : #TextOnly,
+        Common.ExternalID : products.name,
 )};
+
+annotate service.Orders with {
+    customer @Common.FieldControl : #ReadOnly
+};
+
+annotate service.Customers with {
+    firstname @Common.FieldControl : #Mandatory
+};
+
+annotate service.Customers with {
+    email @Common.FieldControl : #Mandatory
+};
 
