@@ -12,7 +12,8 @@ entity Customers : managed, customAspect.customCustomer,cuid{
     // key customerId : UUID;
     // firstname : commonDataType;
     // lastname : commonDataType;
-    email : commonDataType default 'sam@gmail.com';
+    // email : commonDataType default 'sam@gmail.com';
+    email : commonDataType;
     address : String(30) @title : '{i18n>address}';
     phoneno : commonDataType;
     // using enums
