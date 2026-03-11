@@ -13,6 +13,16 @@ class customer extends cds.ApplicationService {
         }
     })
 
+    const {Products} = this.entities;
+
+    this.after('READ',Products,(results,req)=>{
+        let data = results.map((itm)=>{
+            itm.price=100;
+            return itm;
+        })
+        return req.data = data;
+    })
+
     return super.init();
   }
 }
